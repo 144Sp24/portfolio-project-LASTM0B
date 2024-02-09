@@ -1,0 +1,77 @@
+/*
+Author: Dorian Jenkins
+Date: 2/8/2024
+File Name: styles.css
+*/
+
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, img
+    
+/*Style rules for images, body and header*/
+body{
+    background-color: mintcream;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+h1{
+    color: navy;
+}
+
+/*Style rules for navigation section*/
+nav, nav ul, nav li,nav li a,
+
+nav{
+    background-color:darkturquoise;
+}
+
+nav ul{
+   list-style-type: none;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: "Geneva", "Arial", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav li{
+    display: block;
+    color: purple;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-decoration: none;
+}
+
+/*Style rules for main*/
+main, main p, main ul,
+   
+main{
+    padding: 2%;
+    font-family: "Geneva", "Arial", sans-serif;
+    background-color: mintcream;
+    color: navy;
+}
+
+main p{
+    font-size: 1.25em;
+}
+
+main ul{
+    list-style-type: square;
+}
+
+footer{
+    color: darkblue;
+}
