@@ -6,8 +6,13 @@ File Name: styles.css
 
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, img
-
+body,
+header,
+nav,
+main,
+footer,
+h1,
+img
 /*Style Rules for mobile viewport*/
 
 /*Style rules to show mobile class and hide tab-desk class*/
@@ -19,36 +24,46 @@ body, header, nav, main, footer, h1, img
 .tab-desk {
     display: none;
 }
-    
+
 /*Style rules for images, body and header*/
-body{
-    background-color: mintcream;
+body {
+    background-color: beige;
 }
 
-img{
+img {
     max-width: 100%;
     display: block;
 }
 
-h1{
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100px;
+}
+
+h1 {
     color: navy;
 }
 
 /*Style rules for navigation section*/
-nav, nav ul, nav li,nav li a,
+nav,
+nav ul,
+nav li,
+nav li a,
 
-nav{
-    background-color:darkturquoise;
+nav {
+    background-color: navy;
 }
 
-nav ul{
-   list-style-type: none;
+nav ul {
+    list-style-type: none;
     margin: 0;
     text-align: center;
     text-decoration: none;
 }
 
-nav li{
+nav li {
     display: inline-block;
     font-size: 1.5em;
     font-family: "Geneva", "Arial", sans-serif;
@@ -56,53 +71,54 @@ nav li{
     text-decoration: none;
 }
 
-nav li a{
+nav li a {
     display: block;
-    color: purple;
+    color: lavender;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-left: 2em;
     padding-right: 2em;
     text-decoration: none;
+    text-align: center;
 }
 
 /*Style rules for main*/
-main, main p, main ul,
-   
+main,
+main p,
+main ul,
+
 // <uniquifier>: Use a uniquifier for the class name
 // <weight>: Use a value from 300 to 700
 
-.teko-<uniquifier> {
-  font-family: "Teko", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+.teko-<uniquifier > {
+    font-family: "Teko", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
-main{
+main {
     padding: 2%;
     font-family: "Geneva", "Arial", sans-serif;
-    background-color: mintcream;
+    background-color: beige;
     color: navy;
 }
 
-main p{
+main p {
     font-size: 1.25em;
 }
 
-main ul{
+main ul {
     list-style-type: square;
 }
 
-footer{
-    color: darkblue;
-}
+/*Style rules for contact links*/
 
 #contact {
     text-align: center;
 }
 
 .tel-link {
-    background-color: purple;
+    background-color: cornflowerblue;
     padding: 2%;
     width: 80%;
     margin-top: 0;
@@ -113,18 +129,18 @@ footer{
 }
 
 .tel-link a {
-    color: #f6eee4;
+    color: lavender;
     text-decoration: none;
 }
 
 .links a {
     text-decoration: none;
-    color: #f6eee4;
-    
+    color: lavender;
+
 }
 
 .links {
-    background-color: mediumpurple;
+    background-color: royalblue;
     padding: 2%;
     width: 80%;
     margin-top: 0;
@@ -136,12 +152,12 @@ footer{
 
 .link a {
     text-decoration: none;
-    color: #f6eee4;
-    
+    color: lavender;
+
 }
 
 .link {
-    background-color: darkorchid;
+    background-color: mediumblue;
     padding: 2%;
     width: 80%;
     margin-top: 0;
@@ -151,11 +167,59 @@ footer{
     text-decoration: none;
 }
 
-.footer a {
-    text-decoration: none;
+
+
 }
 
 .round {
     border-radius: 6px;
-    
-    
+}
+
+/*Style rules for footer*/
+footer {
+    color: lavender;
+    background-color: navy;
+    padding: 2%;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer a {
+    text-decoration: none;
+    color: orchid;
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px),
+print {
+
+    .tablet-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+}
+
+/* Media Query for Desktop Viewport */
+    @media screen and (min-width: 1015px), print {
+        
+        nav li a:hover {
+            color: #000;
+            background-color: lavender;
+        }
+        
+        
+        .sticky{
+            position: static;
+            padding-bottom: 2%;
+        }
+        
+        
+}
